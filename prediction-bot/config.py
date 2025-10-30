@@ -9,7 +9,7 @@ dotenv.load_dotenv()
 # -----------------------------------------------------------------------------
 
 MODEL_NAME = "gpt-5-nano-2025-08-07"
-NUM_QUERIES = 3
+NUM_QUERIES = 1
 NUM_URLS = 5
 MAX_QUERY_WORDS = 7
 
