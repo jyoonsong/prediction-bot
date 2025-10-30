@@ -37,3 +37,11 @@ pip install -r requirements.txt
 ```
 python -u -m prediction-bot.main
 ```
+
+### Relevant resources
+
+-   OpenAI models: https://platform.openai.com/docs/models
+-   OpenAI Structured Output: https://platform.openai.com/docs/guides/structured-outputs
+-   DDGS Search Library: https://github.com/deedy5/ddgs
+-   Beautiful Soup Library: https://beautiful-soup-4.readthedocs.io/en/latest/
+-   Kalshi API: https://docs.kalshi.com/welcome?redirect=%2Freference%2Fget-started-on-kalshi
