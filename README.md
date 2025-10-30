@@ -1,1 +1,1 @@
-# prediction-bot
+# Prediction Market Trading Bot
