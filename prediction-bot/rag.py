@@ -93,6 +93,6 @@ def get_report(event: Dict[str, any], market_descriptions: str) -> Tuple[str, Li
     for q in queries:
         summary = process_query(q, event, market_descriptions)
         summaries.append(summary)
-    report = "\n\n".join(f"# Research Report {i+1}\n{summary}" for i, summary in enumerate(summaries))
+    report = "\n\n".join(f"{summary}" for i, summary in enumerate(summaries))
     log(f"Completed report generation for event {event.get('title', '')}")
     return report.strip()

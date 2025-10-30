@@ -13,7 +13,7 @@ def main():
         market_descriptions = get_market_descriptions(event)
         report = get_report(event, market_descriptions)
 
-        report_filename = f"reports/event_{event['event_ticker']}_report.txt"
+        report_filename = f"event_{event['event_ticker']}_report.txt"
         with open(report_filename, "w") as f:
             f.write(report)
 
@@ -23,6 +23,8 @@ def main():
         log("---### Final Prediction Output Start ###---")
         log(f"Final prediction for event {event['event_ticker']}:\n{prediction}")
         log("---### Final Prediction Output End ###---")
+
+        # use the prediction object to make trading decisions using Kalshi API (not implemented here)
 
 if __name__ == "__main__":
     main()
